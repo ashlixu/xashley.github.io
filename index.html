@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -9,127 +10,69 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body>    
     <div id="main-container">
-        <a class="header-link" href="#about-me">ABOUT ME</a>
-        <a class="header-link" href="#experience">EXPERIENCE</a>
-        <a class="header-link" href="#projects">PROJECTS</a>
+        <a class="header-link" id="defaultTab" onclick="changeTab('about-me')">ABOUT ME</a>
+        <a class="header-link" onclick="changeTab('experience')">EXPERIENCE</a>
+        <a class="header-link" onclick="changeTab('projects')">PROJECTS</a>
         <div id="content-container">
-            <div class="section" style="text-align: center">
-                <p>Welcome to my website!</p>
-            </div>
-            <hr>
             <div id="about-me" class="section">
                 <br>
-                <p>My name is Ashley Xu, and I am a second year Computer Science major at Northeastern University.
-                    <br>
-                    <br> This website is a work in progress!
-                    <br>
-                    <br> Contact me/Links:
+                <p>
+                    Welcome to my website!
+                </p>
+                <p>
+                    My name is Ashley Xu, and I am currently a second year Computer Science major at Northeastern University. My website is currently a work in progress, so there are some temporary gaps. I have plans to add images and more features to this website in the future. Specifically, I am planning to take my own pictures around Boston to add, but I'm waiting for it to start warming up a bit.
+                </p>
+                <p>
+                    When I'm not working on homework or working remotely for my internship, I enjoy watching shows on Netflix, listening to music, taking walks outside, going out to eat (I'm a foodie, although lately I have been cooking a lot myself to practice), and watching YouTube videos.
+                </p>
+                <p>My favorite show of all time is <i>Friends</i>. In terms of music, my favorite artist at the moment is Kendrick Lamar.</p>
+                <p>I'm originally from Idaho, so when I'm in Boston, I love to take the opportunity to eat fresh seafood and authentic Asian food.</p>
+                <p>I enjoy watching skincare, makeup, and stationery YouTube videos. I like to research skincare and makeup products to add to my skincare and makeup routines. I actually like taking notes for classes and trying to make my notes look neat and aesthetically pleasing. I get a lot of inspiration from the videos I find on YouTube, such as different styles of neat handwriting and good pens and highlighters.
+                </p>
+                <p>
+                    Contact Me/Links:
                     <a href="https://www.linkedin.com/in/xu-ashley/">LinkedIn</a>
                     <a href="https://github.com/xashley">GitHub</a>
-                    <a href="#">Resume</a>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br></p>
+                </p>
             </div>
-            <hr>
             <div id="experience" class="section">
                 <br>
-                <p>WIP</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>Under construction</p>
+                <p>Check back later for more updates!</p>
+                <!--<p style="text-align: center; font-size: 18px;">Relevant Courses</p>
+                <p>Object-Oriented Design, Fundamentals of Computer Science I & II
+                    <br>Theory of Computation, Logic and Computation, Discrete Structures
+                    <br>Linear Algebra, Calculus for Engineering and Science I & II
+                    <br>Embedded Design: Enabling Robotics
+                </p>-->
             </div>
-            <hr>
             <div id="projects" class="section">
                 <br>
-                <p>WIP</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>Under construction</p>
+                <p>Check back later for more updates!</p>
             </div>
         </div>
     </div>
+    
+    <script>
+    function changeTab(tabID) {
+        var i, tabContents;
+        
+        // Hide elements of class="section" by default
+        tabContents = document.getElementsByClassName("section");
+        for (i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = "none";
+        }
+        
+        // Show tab content
+        document.getElementById(tabID).style.display = "block";
+    }
+        
+        document.getElementById("defaultTab").click();
+    </script>
+    
 </body>
 
 </html>
