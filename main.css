@@ -1,6 +1,16 @@
 body {
-    background-color: #ffcccc;
+    
     /*background-color:#FFD1DC;*/
+}
+
+#title-name {
+    font-family: 'Sacramento', cursive;
+    font-size: 46px;
+    opacity: 0.8;
+}
+
+.float-right-img {
+    float: right;
 }
 
 #main-container {
@@ -34,7 +44,6 @@ body {
 
 #content-container {
     text-align: left;
-    border-radius: 10px;
     height: 100%;
     width: 100%;
     background-color: white;
