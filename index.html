@@ -7,70 +7,53 @@
     <title>Ashley's Website</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 </head>
 
-<body>    
-    <div id="main-container">
-        <!--href="#about-me"
-href="#experience"
-href="#projects"
--->
-        <div id="title-name">Ashley Xu</div>
+<body>
+    <div id="container">
+        <h1>Ashley Xu</h1>
+        <div id="about-me" class="section">
+            <p>2nd year Computer Science major at Northeastern University</p>
+            <p><b>Favorite TV Show:</b> <i>Friends</i></p>
+            <p><b>Hobbies:</b> hiking, watching Netflix, listening to music, taking walks, exploring Boston's food scene, watching YouTube videos, stationery and taking notes</p>
+            <p><b>Contact Me/Links:</b> <a href="https://www.linkedin.com/in/xu-ashley/">LinkedIn</a>, <a href="https://github.com/xashley">GitHub</a></p>
+        </div>
+        <div id="experience" class="section">
+            <p>Under construction</p>
+            <p>Check back later for more updates!</p>
+        </div>
+        <div id="projects" class="section">
+            <p>Under construction</p>
+            <p>Check back later for more updates!</p>
+        </div>
+        <br>
+        <br>
         <a class="header-link" id="defaultTab" onclick="changeTab('about-me')">ABOUT ME</a>
         <a class="header-link" onclick="changeTab('experience')">EXPERIENCE</a>
         <a class="header-link" onclick="changeTab('projects')">PROJECTS</a>
-        <div id="content-container">
-            <div id="about-me" class="section">
-                <br>
-                <p><img src="https://via.placeholder.com/150" alt="Placeholder" class ="float-right-img">
-                    My name is Ashley Xu, and I am a second year Computer Science major at Northeastern University.
-                    <br>
-                    <br> This website is a work in progress!
-                    <br>
-                    <br> Contact me/Links:
-                    <a href="https://www.linkedin.com/in/xu-ashley/">LinkedIn</a>
-                    <a href="https://github.com/xashley">GitHub</a>
-                    <a href="#">Resume</a>
-                    <br></p>
-            </div>
-            <div id="experience" class="section">
-                <br>
-                <p>WIP</p>
-                <br>
-                <br>
-                <p style="text-align: center; font-size: 18px;">Relevant Courses</p>
-                <p>Coding: Object-Oriented Design, Fundamentals of Computer Science I & II
-                    <br>Theory: Theory of Computation, Logic and Computation, Discrete Structures
-                    <br>Math: Linear Algebra, Calculus for Engineering and Science I & II
-                    <br>Other: Embedded Design: Enabling Robotics
-                </p>
-            </div>
-            <div id="projects" class="section">
-                <br>
-                <p>WIP</p>
-            </div>
-        </div>
     </div>
-    
+
     <script>
-    function changeTab(tabID) {
-        var i, tabContents;
-        
-        // Hide elements of class="section" by default
-        tabContents = document.getElementsByClassName("section");
-        for (i = 0; i < tabContents.length; i++) {
-            tabContents[i].style.display = "none";
+        function changeTab(tabID) {
+            var i, tabContents;
+
+            // Hide elements of class="section" by default
+            tabContents = document.getElementsByClassName("section");
+            for (i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            // Show tab content
+            document.getElementById(tabID).style.display = "block";
         }
-        
-        // Show tab content
-        document.getElementById(tabID).style.display = "block";
-    }
-        
+
         document.getElementById("defaultTab").click();
+
     </script>
-    
+
 </body>
 
 </html>
